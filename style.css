@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px rgba(128, 128, 128, 0.571);
+    width: 550px;
+    height: 400px;
+
+}
+
+.left {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.circle {
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #cdc2ff;
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.left>p {
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(221, 100%, 96%);
+}
+
+p {
+    color: #bfb9ff;
+}
+
+h1 {
+    color: #fdfdfe;
+    font-size: 50px;
+    margin: 0;
+}
+
+.right {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    width: 50%;
+}
+
+.right>h3 {
+    color: #3b4052;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(126, 249, 208);
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.card>img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.card>p {
+    font-weight: 500;
+}
+
+.Reaction {
+    background-color: hsl(221, 100%, 96%);
+}
+
+.Memory {
+    background-color: #fffbf2;
+}
+
+.Verbal {
+    background-color: #f2fbfa;
+}
+
+.Visual {
+    background-color: #f3f3fd;
+}
+
+.card>#Reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.card>#Memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.card>#Verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.card>#Visual {
+    color: hsl(234, 85%, 45%);
+
+}
+
+.score {
+    margin-left: auto;
+    color: #9e9da2;
+    font-weight: 800;
+}
+
+.score>span {
+    color: black;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #303b59;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 45px;
+    color: #ffffff;
+
+}
+
+button:active {
+    cursor: pointer;
+    background-image: linear-gradient(#6542ff, #2f2ce8);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (width<=550px) {
+
+    body {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        z-index: 0;
+    }
+
+    .right {
+        border-radius: 0;
+        width: 100%;
+        height: 55%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+}
